@@ -1,4 +1,3 @@
-// 檔名：MultiLevelCacheSystem.java
 import java.util.*;
 
 public class MultiLevelCacheSystem {
@@ -78,7 +77,7 @@ public class MultiLevelCacheSystem {
             return null;
         }
 
-        // 彈出 LRU 的 key（LinkedHashMap 最「冷」的是最早使用的在迭代開頭）
+        // 彈出 LRU 的 key
         Integer popLRUKey() {
             Iterator<Map.Entry<Integer, Node>> it = lru.entrySet().iterator();
             if (it.hasNext()) {
@@ -234,7 +233,6 @@ public class MultiLevelCacheSystem {
         }
     }
 
-    // ===== 測試 =====
     public static void main(String[] args) {
         MultiLevelCache cache = new MultiLevelCache();
 
@@ -257,7 +255,5 @@ public class MultiLevelCacheSystem {
         cache.put(5, "E");
         cache.put(6, "F");
         cache.printState("after put 4,5,6");
-
-        // 你可以再加更多 get/put 觀察升降級行為
     }
 }
