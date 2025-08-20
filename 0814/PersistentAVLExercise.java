@@ -1,4 +1,3 @@
-// 檔案：PersistentAVLExercise.java
 import java.util.*;
 
 /**
@@ -181,7 +180,7 @@ public class PersistentAVLExercise {
         return cand;
     }
 
-    /* ==================== Demo ==================== */
+
     public static void main(String[] args) {
         PersistentAVLExercise pavl = new PersistentAVLExercise();
 
