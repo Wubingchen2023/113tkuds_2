@@ -69,14 +69,3 @@ public class M12_MergeKTimeTables {
         System.out.println();
     }
 }
-
-/*
-Time Complexity:
-- 初始推入 K 個首元素：O(K)
-- N 個元素，每個進出堆一次 ⇒ O(N log K)
-- 總時間：O(N log K)，其中 N 為所有列表元素總數（≤ 1000）
-
-Space Complexity:
-- 儲存所有列表與結果：O(N)
-- 儲存堆最多 K 個元素：O(K)
-*/
