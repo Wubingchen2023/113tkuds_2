@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class lt_01_TwoSum {
+public class lt_01_twosum {
     public int[] twoSum(int[] nums, int target) {
         // 創建一個 HashMap，鍵為數字，值為其索引
         Map<Integer, Integer> map = new HashMap<>();
@@ -30,7 +30,7 @@ public class lt_01_TwoSum {
     }
 
     public static void main(String[] args) {
-        lt_01_TwoSum solution = new lt_01_TwoSum();
+        lt_01_twosum solution = new lt_01_twosum();
         
         int[] nums = {2, 7, 11, 15};
         int target = 9;
